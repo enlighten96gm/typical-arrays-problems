@@ -1,12 +1,34 @@
 
 exports.min = function min (array) {
-  return 0;
+  if (array === undefined || array.length == []) {
+    return 0
+  } else {
+    let min = Math.min(...array)
+    return min
+  }
+  
 }
 
 exports.max = function max (array) {
-  return 0;
+  if (array === undefined || array.length == []) {
+    return 0
+  } else {
+    let max = Math.max(...array)
+    return max
+  }
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  if (array === undefined || array.length == []) {
+    return 0
+  } else {
+    let sum = 0
+    let count = array.length
+    for(let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    let avg = sum/count
+    return avg
+  }
+  
 }
